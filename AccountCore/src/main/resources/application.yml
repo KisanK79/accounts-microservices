@@ -1,0 +1,30 @@
+server:
+  port : 8081
+org:
+  hibernate: 
+    dialect:
+      MySQL5InnoDBDialect : org.hibernate.dialect.MySQL5Dialect
+
+#logging:
+#  file:
+#    name: logs/myLog.log
+#  level:
+#    '[com.account_core]': trace
+#  pattern:
+#    console:  
+#logging:
+#  level:
+#    '[com.account_core.app]': trace
+#  pattern:
+#    console: '%d [%t] %c{1.} %level  - %m %n'
+spring:
+   jpa:
+     hibernate:
+       ddl-auto: update
+   datasource:
+      url: "jdbc:mysql://localhost:3306/assignment"
+      username: root
+      password: kisan
+   jackson:
+     serialization:
+       fail-on-empty-beans: false

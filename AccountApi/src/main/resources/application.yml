@@ -1,0 +1,8 @@
+server.port: 8080
+logging:
+  file:
+    name: logs/myLog.log
+  level:
+    '[com.account_api]': trace
+  pattern:
+    console: 
